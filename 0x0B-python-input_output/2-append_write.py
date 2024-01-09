@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-"""This module definefunction."""
+append_write = __import__('2-append_write').append_write
 
-
-def append_write(filename="", text=""):
-    """Appends a sTF8 text file
-    """
-    with open(filename, "a", encoding="u-8") as f:
-        return f.write(text)
+nb_characters_added = append_write("file_append.txt", "This School is so cool!\n")
+print(nb_characters_added)
